@@ -1,8 +1,12 @@
 import * as React from 'react';
+import { StaticCanvas, FabricText } from 'fabric'
+
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+
 
 function App() {
     return (
@@ -28,24 +32,46 @@ function App() {
                 width: '97%',
                 height: '500px'
             }}>
-                <Box component="section" sx={{
+                <Stack spacing={2} sx={{
                     p: 2,
-                    border: 1,
-                    borderColor: 'grey.500',
-                    borderRadius: '16px',
-                    boxShadow: 3,
                     width: '97%',
+                    alignItems: 'center'
                 }}>
-                </Box>
-                <Box component="section" sx={{
+                    <Box component="section" sx={{
+                        p: 2,
+                        border: 1,
+                        borderColor: 'grey.500',
+                        borderRadius: '16px',
+                        boxShadow: 3,
+                        width: '97%',
+                        height: '100%'
+                    }}>
+                    </Box>
+                    <ButtonGroup variant="contained" aria-label="Basic button group">
+                        <Button>Upload Image</Button>
+                        <Button>Download Wii U Icon</Button>
+                    </ButtonGroup>
+                </Stack>
+                <Stack spacing={2} sx={{
                     p: 2,
-                    border: 1,
-                    borderColor: 'grey.500',
-                    borderRadius: '16px',
-                    boxShadow: 3,
                     width: '97%',
+                    alignItems: 'center'
                 }}>
-                </Box>
+                    <Box component="section" sx={{
+                        p: 2,
+                        border: 1,
+                        borderColor: 'grey.500',
+                        borderRadius: '16px',
+                        boxShadow: 3,
+                        width: '97%',
+                        height: '100%'
+                    }}>
+                    </Box>
+                    <ButtonGroup variant="contained" aria-label="Basic button group">
+                        <Button>Upload Image</Button>
+                        <Button>Download Wii U Banner</Button>
+                    </ButtonGroup>
+                </Stack>
             </Stack>
         </Stack>
     );
