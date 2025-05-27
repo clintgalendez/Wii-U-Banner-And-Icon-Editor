@@ -13,7 +13,7 @@ export default function Component() {
                     {/* Right side - C.O.G. logo */}
                     <div className="flex-shrink-0">
                         <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105">
-                            <img src="/cog_logo.png" alt="C.O.G. Logo" />
+                            <img src={`${import.meta.env.BASE_URL}cog_logo.png`} alt="C.O.G. Logo" />
                         </div>
                     </div>
                 </div>
