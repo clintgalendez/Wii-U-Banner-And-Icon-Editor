@@ -2,8 +2,6 @@ import * as React from 'react';
 import { Stage, Layer, Image, Rect, Transformer } from 'react-konva'; // Added Transformer
 import useImage from 'use-image';
 
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -285,14 +283,11 @@ function App() {
 
 
     return (
-        <Stack direction="row" spacing={2} className="w-full" sx={{
+        <Stack direction="row" spacing={2} className="w-full h-auto" sx={{
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
         }}>
-            <Stack spacing={2} sx={{
-                    p: 2,
-                    alignItems: 'center'
-                }}>
+            <Stack spacing={2} sx={{ alignItems: 'center' }}>
                     <Stage
                         ref={iconStageRef}
                         width={128}
@@ -362,7 +357,6 @@ function App() {
                     </ButtonGroup>
                 </Stack>
             <Stack spacing={2} sx={{
-                    p: 2,
                     alignItems: 'center'
                 }}>
                     <Stage

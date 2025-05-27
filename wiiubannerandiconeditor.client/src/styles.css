@@ -1,1 +1,50 @@
 @import "tailwindcss";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Optional: to prevent horizontal scrollbar if content overflows slightly */
+}
+
+.app-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Ensures video does not cause scrollbars on the container */
+}
+
+.background-video {
+    position: fixed; /* Changed from absolute to fixed for viewport coverage */
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* Ensures video is behind all other content */
+    object-fit: cover; /* Covers the screen without stretching */
+    background-size: cover;
+}
+
+.content {
+    position: relative; /* Ensures content is layered on top of the video */
+    z-index: 1; /* Higher z-index than the video */
+    color: white; /* Example: change text color for visibility against a dark video */
+    /* Add padding or other styles for your content area as needed */
+    padding: 20px;
+    height: 100%; /* Ensure content container can take up full height if needed */
+    overflow-y: auto; /* Allow content to scroll if it exceeds viewport height */
+}
+
+/* Ensure Navbar is above the video */
+/* If your Navbar component has a specific class or ID, target that.
+   Otherwise, you might need to wrap it or style its default element.
+   Assuming Navbar renders a <nav> or a <div> with a class like 'navbar'.
+   This is a general approach; adjust if your Navbar has a specific structure.
+*/
+nav { /* Or a more specific selector for your Navbar */
+    position: relative;
+    z-index: 1000; /* Ensure Navbar is above the background video and other content */
+}
