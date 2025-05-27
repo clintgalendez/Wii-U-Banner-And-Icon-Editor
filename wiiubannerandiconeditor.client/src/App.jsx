@@ -7,8 +7,8 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 
 function App() {
-    const [iconOverlay] = useImage('src/assets/templates/wii_u_icon_template.png');
-    const [bannerOverlay] = useImage('src/assets/templates/wii_u_banner_template.png');
+    const [iconOverlay] = useImage('/templates/wii_u_icon_template.png');
+    const [bannerOverlay] = useImage('/templates/wii_u_banner_template.png');
 
     const [iconImage, setIconImage] = React.useState(null);
     const [bannerImage, setBannerImage] = React.useState(null);

@@ -8,13 +8,11 @@ import App from './App.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 
-import videoBg from './assets/background_video.mp4'; // Import the video
-
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <div className="app-container">
             <video autoPlay loop muted playsInline className="background-video">
-                <source src={videoBg} type="video/mp4" />
+                <source src='/background_video.mp4' type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="content">
