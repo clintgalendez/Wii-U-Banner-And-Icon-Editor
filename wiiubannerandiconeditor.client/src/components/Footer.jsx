@@ -54,14 +54,6 @@ export default function Footer() {
                         <p className="text-sm text-gray-600">
                             (c) {new Date().getFullYear()} Clint's Online Gizmos. All rights reserved.
                         </p>
-                        <div className="flex space-x-4 text-sm">
-                            <a href="/privacy" className="text-gray-600 hover:text-gray-800 transition-colors duration-200">
-                                Privacy Policy
-                            </a>
-                            <a href="/terms" className="text-gray-600 hover:text-gray-800 transition-colors duration-200">
-                                Terms of Service
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
