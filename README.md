@@ -80,9 +80,3 @@ This project was bootstrapped with `create-vite`.
 ## Contributing
 
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
-
-*(Consider adding a "License" section if you have one)*
-
-*(Consider adding a "Acknowledgements" section if you used any third-party assets or got help from others)*
-
-*(Consider adding a "Support" section, like your "Buy me a coffee" link from `index.html`)*
