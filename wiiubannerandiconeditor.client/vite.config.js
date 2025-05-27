@@ -40,6 +40,7 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: '/Wii-U-Banner-And-Icon-Editor/', // Add this line
     plugins: [plugin(), tailwindcss(),],
     resolve: {
         alias: {
