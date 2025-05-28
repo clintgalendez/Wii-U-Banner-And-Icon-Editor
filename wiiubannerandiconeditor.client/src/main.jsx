@@ -4,8 +4,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import App from './App.jsx'
-import Navbar from './components/Navbar.jsx'
+import EditorManager from './components/EditorManager.jsx'
 import Footer from './components/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
@@ -16,8 +15,7 @@ createRoot(document.getElementById('root')).render(
                 Your browser does not support the video tag.
             </video>
             <div className="content">
-                <Navbar />
-                <App />
+                <EditorManager />
                 <Footer />
             </div>
         </div>
