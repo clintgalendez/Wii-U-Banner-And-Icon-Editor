@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import { Stage, Layer, Image, Rect, Transformer } from 'react-konva'; // Added Transformer
-import Stack from '@mui/material/Stack';
 import useImage from 'use-image';
 
 function App(props) {
@@ -116,22 +115,19 @@ function App(props) {
     };
 
     return (
-        <Stack direction="row" spacing={2} className="w-full h-auto" sx={{
-            alignItems: 'center',
-            justifyContent: 'center',
-        }}>
+        <div className="w-full h-auto items-center justify-center inline-grid grid-cols-[max-content_max-content] gap-25">
             <Stage
                 ref={iconStageRef}
                 width={128}
                 height={128}
-                className="border border-gray-500 shadow-xl"
+                className="shadow-xl"
                 onMouseDown={handleStageMouseDown}
                 onTap={handleStageMouseDown} // For touch devices
             >
                 <Layer>
                     <Rect
                         name="background-rect" // Name for easier identification in event handling
-                         width={128}
+                        width={128}
                         height={128}
                         fill="white"
                     />
@@ -182,12 +178,11 @@ function App(props) {
                 width={displayWidth} // Use display dimensions
                 height={displayHeight} // Use display dimensions
                 // Removed Stage scaling props
-                className="border border-gray-500 shadow-xl"
+                className="shadow-xl"
                 onMouseDown={handleStageMouseDown}
                 onTap={handleStageMouseDown} // For touch devices
             >
-                <Layer // Removed Layer scaling props
-                >
+                <Layer>
                     <Rect
                         name="background-rect"
                         width={displayWidth} // Use display dimensions
@@ -244,7 +239,7 @@ function App(props) {
                     />
                 </Layer>
             </Stage>
-        </Stack>
+        </div>
     );
 }
 
