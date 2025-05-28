@@ -1,82 +1,89 @@
-# Wii U Icon and Banner Editor
+# Wii U Banner and Icon Editor
 
-Create custom icons and banners for your Wii U applications with ease! This tool provides a simple interface to upload your images, adjust their position and scale, and download them perfectly formatted for the Wii U, complete with the standard overlay templates.
+This project is a web-based tool for creating and editing custom banners and icons for the Wii U console. It allows users to upload images, position and scale them, and then export them in the correct dimensions for use on the Wii U.
 
 ## Features
 
-*   **Icon Editor (128x128):** Upload an image and transform it into a Wii U compatible icon.
-*   **Banner Editor (1280x720):** Craft the perfect banner for your application.
-*   **Image Manipulation:**
-    *   Drag and drop to position your image.
-    *   Resize and rotate your image with intuitive controls.
-    *   Maintain aspect ratio during transformations.
-*   **Template Overlays:** Visual guides ensure your creations align with Wii U standards.
-*   **Instant Download:** Get your `wii_u_icon.png` and `wii_u_banner.png` files directly from the browser.
-*   **Built with Modern Tech:** Developed using React, Vite, Konva for canvas manipulation, and Material UI for a clean user interface.
+*   **Icon Editor:** Upload and edit 128x128 pixel icons.
+*   **Banner Editor:** Upload and edit 1280x720 pixel banners (displayed at 854x480 in the editor).
+*   **Image Manipulation:** Drag, resize, and rotate images within the editor.
+*   **Template Overlays:** Visual guides to help with placement.
+*   **Download Functionality:** Export your creations as image files.
 
-## How to Use
-
-1.  **Upload Image:**
-    *   Click the "Upload Image" button below either the Icon or Banner preview area.
-    *   Select an image file from your computer.
-2.  **Adjust Image:**
-    *   Click on the uploaded image within the preview area to select it.
-    *   Transformation controls will appear.
-    *   **Drag** the image to position it.
-    *   **Drag the corner anchors** to resize the image (aspect ratio is maintained).
-    *   **Drag the top anchor** to rotate the image.
-3.  **Download:**
-    *   Once you are satisfied with the preview, click the "Download Wii U Icon" or "Download Wii U Banner" button.
-    *   The image will be downloaded in the correct dimensions and format.
-
-## Getting Started (Development)
+## Project Setup
 
 This project was bootstrapped with `create-vite`.
 
 ### Prerequisites
 
-*   Node.js (LTS version recommended)
-*   npm (comes with Node.js)
-*   .NET SDK (for HTTPS certificate generation, as configured in `vite.config.js`)
+*   Node.js and npm (or yarn)
+*   .NET SDK (for development certificate generation, if not already set up)
 
-### Installation & Setup
+### Installation
 
-1.  **Clone the repository:**
+1.  Clone the repository:
     ```bash
     git clone <your-repository-url>
+    ```
+2.  Navigate to the project directory:
+    ```bash
     cd wiiubannerandiconeditor.client
     ```
-
-2.  **Install dependencies:**
+3.  Install dependencies:
     ```bash
     npm install
     ```
+    or
+    ```bash
+    yarn install
+    ```
 
-3.  **Development Server:**
-    The `vite.config.js` is set up to use ASP.NET Core developer certificates for HTTPS.
-    *   If you haven't already, ensure you have .NET SDK installed.
-    *   The first time you run the dev server, it might attempt to generate these certificates. Follow any prompts.
-    *   Start the development server:
-        ```bash
-        npm run dev
-        ```
-    *   Open your browser and navigate to the local URL provided by Vite (usually `https://localhost:1863` or similar).
+## Available Scripts
 
-### Available Scripts
+In the project directory, you can run:
 
-*   `npm run dev`: Runs the app in development mode with HMR.
-*   `npm run build`: Builds the app for production to the `dist` folder.
-*   `npm run lint`: Lints the project files using ESLint.
-*   `npm run preview`: Serves the production build locally for preview.
+### `npm run dev` or `yarn dev`
+
+Runs the app in development mode. Open your browser and navigate to the local development server URL provided in the console (typically `https://localhost:1863` or similar).
+
+The page will reload if you make edits.
+You will also see any lint errors in the console.
+
+### `npm run build` or `yarn build`
+
+Builds the app for production to the `dist` folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+
+### `npm run lint` or `yarn lint`
+
+Lints the project files for any code style issues or errors.
+
+### `npm run preview` or `yarn preview`
+
+Serves the production build locally for previewing before deployment.
 
 ## Technologies Used
 
-*   **Frontend:** React, Vite
-*   **Image Manipulation:** React Konva, use-image
-*   **UI Components:** Material UI
-*   **Styling:** Tailwind CSS (via `@tailwindcss/vite`)
-*   **Linting:** ESLint
+*   React
+*   Vite
+*   Konva.js (for 2D canvas rendering)
+*   Tailwind CSS
+*   Lucide React (for icons)
+
+## How to Use
+
+1.  Launch the application using `npm run dev`.
+2.  Use the "Upload Icon" or "Upload Banner" buttons to select an image from your computer.
+3.  The image will appear in the respective editor (Icon on the left, Banner on the right).
+4.  Click on an image to select it. A transformer tool will appear, allowing you to:
+    *   Drag the image to reposition it.
+    *   Drag the corner anchors to resize the image (aspect ratio is maintained).
+    *   Drag the top anchor to rotate the image.
+5.  Once you are satisfied with the placement and size, click the "Download Icon" or "Download Banner" button to save the image.
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
