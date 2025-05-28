@@ -42,7 +42,7 @@ export default function Footer() {
                                     className="text-md font-semibold text-white drop-shadow-lg bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent"
                                     style={{ fontFamily: '"Segoe UI", "Frutiger", "Helvetica Neue", Arial, sans-serif' }}
                                 >
-                                    Contact Us
+                                    Contact Me
                                 </h4>
                                 <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
                             </div>
@@ -69,7 +69,7 @@ export default function Footer() {
                                     className="text-md font-semibold text-white drop-shadow-lg bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent"
                                     style={{ fontFamily: '"Segoe UI", "Frutiger", "Helvetica Neue", Arial, sans-serif' }}
                                 >
-                                    Follow Us
+                                    Follow Me
                                 </h4>
                                 <div className="absolute -bottom-1 right-0 md:right-0 left-0 md:left-auto md:w-3/4 h-px bg-gradient-to-l from-white/40 via-blue-200/60 to-transparent"></div>
                             </div>
