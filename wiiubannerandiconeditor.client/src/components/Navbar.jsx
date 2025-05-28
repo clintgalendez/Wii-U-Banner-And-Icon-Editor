@@ -1,6 +1,6 @@
 export default function Component() {
     return (
-        <nav className="w-full mx-auto max-w-7xl mt-4 mb-8 relative">
+        <nav className="w-full mx-auto max-w-7xl mt-4 mb-4 relative">
             {/* Main navigation container with Aero glass effect */}
             <div className="relative bg-gradient-to-b from-blue-400 via-blue-500 to-blue-700 rounded-2xl shadow-2xl border border-blue-300/50 overflow-hidden">
                 {/* Glass overlay effect */}

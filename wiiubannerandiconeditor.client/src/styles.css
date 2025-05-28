@@ -33,7 +33,6 @@ body, html {
     z-index: 1; /* Higher z-index than the video */
     color: white; /* Example: change text color for visibility against a dark video */
     /* Add padding or other styles for your content area as needed */
-    padding: 20px;
     height: 100%; /* Ensure content container can take up full height if needed */
     overflow-y: auto; /* Allow content to scroll if it exceeds viewport height */
 }
