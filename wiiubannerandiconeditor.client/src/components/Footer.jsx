@@ -56,7 +56,7 @@ export default function Footer() {
                                         className="text-sm text-blue-100 drop-shadow-md font-medium"
                                         style={{ fontFamily: '"Segoe UI", "Frutiger", "Helvetica Neue", Arial, sans-serif' }}
                                     >
-                                        support@wiiueditor.com
+                                        galendez.clintjonathan@gmail.com
                                     </span>
                                 </div>
                             </div>
@@ -79,6 +79,7 @@ export default function Footer() {
                                     href="https://www.linkedin.com/in/clintgalendez/"
                                     className="relative group"
                                     aria-label="LinkedIn Profile"
+                                    target="_blank"
                                 >
                                     {/* Outer glow */}
                                     <div className="absolute inset-0 w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-700 rounded-2xl blur-sm opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -102,7 +103,11 @@ export default function Footer() {
                                 </a>
 
                                 {/* GitHub with enhanced Aero styling */}
-                                <a href="https://github.com/wiiueditor" className="relative group" aria-label="GitHub Profile">
+                                <a
+                                    href="https://github.com/clintgalendez/Wii-U-Banner-And-Icon-Editor"
+                                    className="relative group"
+                                    aria-label="GitHub Profile"
+                                    target="_blank">
                                     {/* Outer glow */}
                                     <div className="absolute inset-0 w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-900 rounded-2xl blur-sm opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
 
@@ -145,7 +150,7 @@ export default function Footer() {
                             className="text-sm text-blue-100 drop-shadow-md"
                             style={{ fontFamily: '"Segoe UI", "Frutiger", "Helvetica Neue", Arial, sans-serif' }}
                         >
-                            (c) {new Date().getFullYear()} Wii U Icon and Banner Editor. All rights reserved.
+                            (c) {new Date().getFullYear()} Clint's Online Gizmos. All rights reserved.
                         </p>
                     </div>
                 </div>
