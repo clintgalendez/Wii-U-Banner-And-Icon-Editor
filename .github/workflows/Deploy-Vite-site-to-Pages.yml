@@ -2,7 +2,7 @@ name: Deploy Vite site to Pages
 
 on:
   push:
-    branches: ["main"] # Or your default branch
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20" # Specify your Node.js version
+          node-version: "20"
           cache: 'npm'
           cache-dependency-path: wiiubannerandiconeditor.client/package-lock.json
       - name: Install dependencies
@@ -27,7 +27,7 @@ jobs:
         run: npm ci
       - name: Build
         working-directory: ./wiiubannerandiconeditor.client
-        run: npm run build # Assuming your build script is 'build' in package.json
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
